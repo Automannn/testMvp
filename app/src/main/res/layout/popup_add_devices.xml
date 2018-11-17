@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/iv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/point_end_youji_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_youji"
+                    android:layout_centerInParent="true"
+                    android:layout_above="@+id/fabu_youji_text"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="55dp" />
+
+                <TextView
+                    android:id="@+id/fabu_youji_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发布游记"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/point_end_lvpai_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_lvpai"
+                    android:layout_above="@+id/fabu_lvpai_text"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="55dp" />
+
+                <TextView
+                    android:id="@+id/fabu_lvpai_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="发布旅拍"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/point_end_gonglue_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_gonglue"
+                    android:layout_above="@+id/fabu_gonglue_text"
+                    android:visibility="invisible"
+                    android:layout_marginEnd="55dp" />
+
+                <TextView
+                    android:id="@+id/fabu_gonglue_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布攻略"
+                    android:textColor="@android:color/black"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/point_start_lvpai"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignStart="@+id/point_start_youji"
+            android:layout_alignTop="@+id/point_start_youji"
+            android:visibility="invisible"
+            android:background="@drawable/icon_lvpai" />
+
+        <ImageView
+            android:id="@+id/point_start_gonglue"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:layout_alignStart="@+id/point_start_youji"
+            android:layout_alignTop="@+id/point_start_youji"
+            android:background="@drawable/icon_gonglue" />
+
+        <ImageView
+            android:id="@+id/point_start_youji"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/tvnull"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_youji"/>
+
+
+        <ImageView
+            android:id="@+id/fabu"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_above="@+id/tvnull"
+            android:src="@drawable/jiahao"/>
+
+        <TextView
+            android:id="@+id/tvnull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

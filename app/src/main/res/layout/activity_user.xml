@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserActivity">
+
+    <EditText
+        android:id="@+id/user_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="昵称"/>
+    <EditText
+        android:id="@+id/user_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="真实姓名"/>
+    <EditText
+        android:id="@+id/user_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="年龄"/>
+    <EditText
+        android:id="@+id/user_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="性别"/>
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="邮箱"/>
+    <Button
+        android:id="@+id/user_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+</LinearLayout>
